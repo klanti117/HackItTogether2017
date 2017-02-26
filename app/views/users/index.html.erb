@@ -1,8 +1,14 @@
 <h1>Users#index</h1>
-
-<% @user.each do |d| %>
-<%= d.name %> | <%= d.email %> | <%= link_to d.name, user_path(d) %>
-<br> 
+<table class="user_index">
+	<tr class="user_row">
+		<% @user.each do |d| %>
+		<td>
+		<%= link_to d.name, user_path(d) %>
+		</td><td><%= d.email %>
+		</td>
+		<td>Phone Number TBD</td>
+	</tr>
 <% end %>
+</table>
 
 <p>Find me in app/views/users/index.html.erb</p>

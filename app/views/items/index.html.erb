@@ -1,2 +1,14 @@
 <h1>Items#index</h1>
+<% @item.each do |i| %>
+<div class="item box">
+	<div class="item image">Image here</div>
+	<div class="item info">
+		<%= i.name %><br>
+		<%= i.description %><br>
+		Num of Comments<br>
+	</div>
+</div>
+<br><br><br>
+<% end %>
+
 <p>Find me in app/views/items/index.html.erb</p>
