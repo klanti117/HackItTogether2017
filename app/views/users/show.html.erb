@@ -3,7 +3,16 @@
 <div class="item_gallery">
 
 <link_to "User Items", users_items_show %><br>
-<%= render @user.items %>
+<%= @user.items.each do |i| %>
+<div class="item">
+<h1><%= @item.name %></h1>
+<%= image_tag @item.image.url(:medium) %>
+<p><%= @item.description %></p>
+<p>Available Check Box</p>
+<p>Comments will go down below</p>
+<% end %>
+</div>
+
 
 
 

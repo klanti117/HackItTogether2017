@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'items/index' => 'items#index'
+
   get 'sessions/new'
 
   get 'users/items/edit'
