@@ -2,6 +2,8 @@
 <html>
   <head>
     <title>HackSquad</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="main.css">
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -9,7 +11,80 @@
   </head>
 
   <body>
-  <%= render 'layouts/header' %>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <%= link_to root_path  do%>
+            <img src=<%= asset_path('logo.jpg') %> alt="logo"/>
+          <% end %>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><%= link_to "Home", root_path %></li>
+            <li><%= link_to "Users", users_path %></li>
+            <li><%= link_to "Items", items_path %></li>
+            <li><%= link_to "New User", users_new_path %></li>
+            <li><%= link_to "New Item", items_new_path %></li>
+            <li><a href="hackaton.html">Logout</a></li>
+          </ul>
+          <form class="navbar-form navbar-right">
+            <input type="text" class="form-control" placeholder="Search...">
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid">
+      <div class="row profile-row">
+
+        <div class="col-sm-12 col-md-10 col-lg-12 col-sm-12 col-md-12  main">
+
+      <div class="row view-all-row">
+        <div class="col-lg-6">
+        <h3 class="sub-header">Recent Items posted </h3>
+        </div>
+        <div class="col-lg-6 view-all-div">
+        <a class="btn btn-primary" href="#" role="button">View all »</a>
+        </div>
+      </div>
+
+
+          <div class="row placeholders">
+
     <%= yield %>
+    <footer class="bs-docs-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4">
+        <p>Connect with us:</p>
+        <br>
+        <a href="http://www.twitter.com" target="_blank"><img src=<%= asset_path('twitter-icon.png') %>></a>
+
+        <a href="http://www.facebook.com" target="_blank"><img src=<%= asset_path('facebook-icon.png') %>></a>
+
+      </div>
+      <div class="col-lg-4"><p>About us:</p>
+        Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+      </div>
+      <div class="col-lg-4"> <p>Shoot us an email:</p>
+        hello@collegegrabz.com
+      </div>
+
+    </div>
+
+  </div>
+</footer>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script scr="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
   </body>
 </html>

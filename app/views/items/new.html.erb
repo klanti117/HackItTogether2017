@@ -1,9 +1,12 @@
 <h1>New Item</h1>
-<%= form_for @item do |f| %>
+<%= form_for @item, html: { multipart: true } do |f| %>
 <%= f.label :name %><br>
 <%= f.text_field :name %><br>
 <%= f.label :description %><br>
 <%= f.text_field :description %><br>
+<p>Do you want to add pictures ?</p>
+<%= f.label :image %><br>
+<%= f.file_field :image %><br>
 <%= f.submit %>
 <% end %>
 <p>Find me in app/views/items/new.html.erb</p>
