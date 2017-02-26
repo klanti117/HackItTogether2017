@@ -1,19 +1,22 @@
 class ItemsController < ApplicationController
+before_action :find_item, only: [:show]
+
 	  def new
-  	@item = Item.new
+      redirect_to root_path if !logged_in?
+  	@item  = current_user.items.build
   end
 
   def create
-  	@item = Item.new(item_params)
-  	if @item.save
-  		redirect_to @item
-  	else
-  		render 'new'
-  	end
+    @item  = current_user.items.build(item_params)
+    if @item.save
+      redirect_to @item
+    else
+      render 'new'
+    end
   end
 
   def show
-  	@item = Item.find(params[:id])
+  	
   end
 
   def edit
@@ -30,7 +33,7 @@ def item_params
 end
 
 def find_item
-	
+	@item = Item.find(params[:id])
 end
 
 end

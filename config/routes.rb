@@ -1,7 +1,9 @@
 Rails.application.routes.draw do
-  get 'items/edit'
+  get 'sessions/new'
 
-  get 'items/show'
+  get 'users/items/edit'
+
+  get 'users/items/show'
 
   get 'users/new'
 
@@ -16,15 +18,14 @@ Rails.application.routes.draw do
 
 
   get 'pages/about'
-  resources :users 
-
-  get 'items/new'
-
-  get 'items/show'
-  get 'items/edit'
-  get 'items/index'
+  resources :users
+  
 
   resources :items
+
+   get    '/login',   to: 'sessions#new'
+  post   '/login',   to: 'sessions#create'
+  delete '/logout',  to: 'sessions#destroy'
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

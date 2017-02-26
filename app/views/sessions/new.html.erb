@@ -1,0 +1,21 @@
+<div class="container">
+<div style="text-align:center;">
+<div class="panel panel-default">
+    <div class="panel-body">
+		<h3>Log In</h3>
+		<p>New ?<%= link_to 'Sign up' %>!</p>
+		<%= form_for(:session, url: login_path) do |f| %>
+
+		<%= f.email_field :email, :placeholder => 'Email', required: true, class: 'form-control' %><br>
+		<%= f.password_field :password, :placeholder => 'Password', required: true, class: 'form-control' %><br>
+
+		<p>
+			<%= f.submit 'LOG IN', class: 'btn btn-success btn-block' %>
+     
+		</p><br>
+
+		 <% end %>
+		 </div>
+		 </div>
+		 </div>
+		 </div>

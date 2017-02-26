@@ -1,6 +1,11 @@
 <h1><%= @user.name %></h1>
 <%= @user.email %> | Phone Number
 <div class="item_gallery">
-This is where the array of items will exist!
+
+<link_to "User Items", users_items_show %><br>
+<%= render @user.items %>
+
+
+
 </div>
 <p>Find me in app/views/users/show.html.erb</p>
