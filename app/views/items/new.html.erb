@@ -1,0 +1,9 @@
+<h1>New Item</h1>
+<%= form_for @item do |f| %>
+<%= f.label :name %><br>
+<%= f.text_field :name %><br>
+<%= f.label :description %><br>
+<%= f.text_field :description %><br>
+<%= f.submit %>
+<% end %>
+<p>Find me in app/views/items/new.html.erb</p>
