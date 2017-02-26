@@ -1,11 +1,11 @@
 Rails.application.routes.draw do
   get 'users/new'
 
-  get 'users/show'
+  get 'users/show' => 'users#show'
 
-  get 'users/edit'
+  get 'users/edit' 
 
-  get 'users/index'
+  get 'users/index' => 'users#index'
 
   root "pages#home"
   get 'pages/home'
