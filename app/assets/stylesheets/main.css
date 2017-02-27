@@ -395,6 +395,8 @@ footer.bs-docs-footer {
         background: #474c50;
         padding: 20px;
                 color: #FFF;
+                
+    display: none;
 }
 footer img {
         margin-right: 12px;

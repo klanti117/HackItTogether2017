@@ -1,0 +1,284 @@
+/*This is CSS*/
+/* Fixed background scrolling */
+*{
+  margin:0;
+}
+
+html, body{
+  height:100%;
+}
+
+h1,h2,h3, h4, h5,h6,p{
+  margin-bottom: 20px;
+}
+
+nav{
+  position:fixed;
+  width:100%;
+   height:50px;
+   background-color: rgba(0,0,0.5);
+   z-index:99;
+   text-align:center;
+}
+
+nav a{
+  text-decoration: none;
+  color: #fff;
+  margin-left:30px;
+  line-height: 50px;
+}
+
+
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+    border-color: #101010;
+    padding-right: 18px;
+
+}
+
+span.profile-username {
+    display: block;
+    padding: 12px;
+    color: #000;
+    font-size: 18px;
+}
+.navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a{
+color: #000;
+}
+.navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a:hover{
+color: #b92933;
+}
+.close-modal {
+    text-align: right;
+    margin: 18px 37px 0 0;
+}
+.placeholder img {
+    width: 200px;
+    height: 155px;
+}
+.placeholder {
+    margin-bottom: 30px;
+}
+.modal-content .container {
+    padding-bottom: 30px;
+}
+
+.navbar-brand {
+    float: left;
+    height: 80px;
+
+  }
+
+  ul.nav.navbar-nav.navbar-right {
+    padding-top: 15px;
+}
+nav.logged-in-nav{
+height: 97px;
+padding-top: 8px;
+    color: #000;
+    background-color: #FFF;
+}
+form.navbar-form.navbar-right {
+    padding-top: 15px;
+}
+a.navbar-brand.logo {
+    padding-top: 6px;
+}
+a.navbar-brand.logo {
+    padding-top: 6px;
+}
+.navbar-inverse {
+    background-color: #FFF;
+}
+.navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a{
+color: #000;
+}
+.navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a:hover{
+color: #b92933 !important;
+}
+
+
+.sect{
+  height:100%;
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-attachment: fixed;
+}
+
+.subSection{
+  height:15%;
+  background-image:cover;
+  background-image:url("img/bc.gif");
+  background-repeat:no-repeat;
+}
+
+.sectOne{
+  background-image:url("img/login.jpg");
+  padding: 250px;
+  color:white;
+
+}
+
+.sectTwo{
+  background-color: white;
+  /* background-image:url("img/books.jpg"); */
+
+}
+
+.sectThree{
+  background-image:url("img/clothes.jpg");
+
+}
+
+/* Login on top */
+.login{
+  position:fixed;
+}
+
+/* Carousel Styling */
+.slide1{
+  background-image: url('img/pizza.jpg');
+  height: 500px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.slide2{
+  background-image: url('img/clothe.jpg');
+  height: 500px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.slide3{
+  background-image: url('img/giveBooks.jpg');
+  height: 500px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.carousel-caption h1{
+  font-size: 5.4em;
+  font-family: 'Pacifico', cursive;
+  padding-bottom: .4em;
+}
+.carousel-caption p{
+  font-size: 2em;
+}
+  footer.bs-docs-footer {
+      background: #474c50;
+      padding: 20px;
+          color: #FFF;
+  }
+  footer img {
+      margin-right: 12px;
+  }
+
+  .aboutUs{
+    padding: 150px;
+  }
+
+  /* Login on top */
+  .login{
+    position:fixed;
+  }
+
+  /* Carousel Styling */
+.slide1{
+  background-image: url('img/clothes.jpg');
+  height: 500px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.slide2{
+  background-image: url('img/pizza.jpg');
+  height: 500px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.slide3{
+  background-image: url('img/giveBooks.jpg');
+  height: 500px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.carousel-caption h1{
+  font-size: 5.4em;
+  font-family: 'Pacifico', cursive;
+  padding-bottom: .4em;
+}
+.carousel-caption p{
+  font-size: 2em;
+}
+.navbar-inverse{
+    background-color: #FFF ;
+    border-color: #080808;
+    height: 100px;
+    }
+
+    .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+    padding-top: 10px;
+}
+a.btn {
+    color: black;
+}
+.icon-box {
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 50%;
+    margin: 20px;
+        background: #FFF;
+        opacity: 0.85;
+        padding: 77px;
+}
+.loggedin-sect{
+      margin-top: 100px;
+  padding: 0px;
+  background-image: url(img/login.jpg);
+color: white;
+}
+.row.content-boxes  {
+      padding-top: 120px;
+       margin-left: 6%;
+  }
+  .row.content-boxes p{
+        text-align: center;
+  }
+  .row.content-boxes p a.btn{
+    color: #FFF;
+    padding: 23px 70px;
+font-size: 30px;
+margin-bottom: 30px;
+  }
+
+/*post*/
+body {
+	background-color: #d9edf7;
+}
+
+.post-form input.form-control {
+    margin-bottom: 7px;
+}
+
+.post-form{
+	margin-top: 15px;
+	background: white;
+	padding: 15px 23px;
+	border-radius: 6px;
+}
+
+.post-form .dropdown {
+	margin-bottom: 7px;
+}
+.sect.sectOne h1 {
+    font-size: 5em;
+  }
+
+  .sect.sectOne p{
+    font-size: 3em;
+
+  }

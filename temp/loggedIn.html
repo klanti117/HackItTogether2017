@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html>
+  <head lang="en">
+    <title>CollegeGrabz</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="main1.css"/>
+    <meta name ="viewport" content="width = device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Libre+Franklin:100,200,200i,300,400,400i,500,600,600i,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://use.fontawesome.com/dd0532adba.js"></script>
+  </head>
+
+<body>
+
+  <nav class="navbar navbar-inverse navbar-fixed-top logged-in-nav">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand logo" href="index.html"><img src="logo.jpg" alt="logo"/></a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li><span class="profile-username"> Hey Michelle</a></li>
+          <li><a href="#">Settings</a></li>
+          <li><a href="profile.html">Profile</a></li>
+          <li><a href="index.html">Logout</a></li>
+        </ul>
+        <form class="navbar-form navbar-right">
+          <input type="text" class="form-control" placeholder="Search...">
+        </form>
+      </div>
+    </div>
+  </nav>
+
+
+
+<!-- First background picture of food -->
+<div class="sect  loggedin-sect">
+<!-- <center><h1>Product Name</h1>
+<blockquote> Slogan </blockquote></center> -->
+<div class="row">
+    <!-- <div class="col-lg-12 text-center">
+        <h2>Items for Grabz</h2>
+        <hr class="star-primary">
+    </div> -->
+</div>
+<div class="row content-boxes">
+  <p>
+    <a class="btn btn-primary btn-lg" href="http://localhost:3000/items/new" data-toggle="modal" >Post to grabz +</a>
+  </p>
+    <div class="col-lg-4 portfolio-item">
+        <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+
+            <div class="icon-box">
+                <i class="fa fa-cutlery fa-5x"></i>
+                <h2>Food</h2>
+            </div>
+        </a>
+    </div>
+    <div class="col-lg-4 portfolio-item">
+        <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+
+            <div class="icon-box">
+                <i class="fa fa-book fa-5x"></i>
+              <h2>  Books</h2>
+            </div>                </a>
+    </div>
+    <div class="col-lg-4 portfolio-item">
+        <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+
+            <div class="icon-box">
+                <i class="fa fa-shopping-bag fa-5x"></i>
+                <h2> Clothing</h2>
+            </div>                </a>
+    </div>
+</div>
+
+
+
+<!-- items modal -->
+<!-- <section id="Items">
+    <div class="sect sectTwo">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2>Items for Grabz</h2>
+                <hr class="star-primary">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4 portfolio-item">
+                <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+
+                    <div class="icon-box">
+                        <i class="fa fa-cutlery fa-5x"></i>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-4 portfolio-item">
+                <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+
+                    <div class="icon-box">
+                        <i class="fa fa-book fa-5x"></i>
+                    </div>                </a>
+            </div>
+            <div class="col-sm-4 portfolio-item">
+                <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+
+                    <div class="icon-box">
+                        <i class="fa fa-shopping-bag fa-5x"></i>
+                    </div>                </a>
+            </div>
+
+</section>
+
+          <!--This ends the pic-->
+        </div>
+<!-- <div class="sect sectThree"> </div> -->
+
+<footer class="bs-docs-footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-4">
+				<p>Connect with us:</p>
+				<br>
+				<a href="http://www.twitter.com" target="_blank"><img src="twitter-icon.png"></a>
+
+				<a href="http://www.facebook.com" target="_blank"><img src="facebook-icon.png"></a>
+
+			</div>
+			<div class="col-lg-4"><p>About us:</p>
+				College Grabz is a free goods exchange platform for college students. Students can give away and recieve free food, books and clothng, all on campus!
+			</div>
+			<div class="col-lg-4"> <p>Shoot us an email:</p>
+				hello@collegegrabz.com
+			</div>
+
+		</div>
+
+	</div>
+</footer>
+
+
+
+    <!-- Portfolio Modals -->
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="modal-body">
+                          <h2>Food for Grabz</h2>
+                          <hr class="star-primary">
+                          <div class="row placeholders">
+
+                            <div class="col-xs-6 col-sm-3 placeholder">
+                              <img src="img/food/pizza.jpg" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail">
+                              <h4>Pizza</h4>
+                              <span class="text-muted">Posted: 24 Feb, 2017 by 10:00am</span>
+                            </div>
+                            <div class="col-xs-6 col-sm-3 placeholder">
+                              <img src="img/food/fries.jpg" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail">
+                              <h4>Fries</h4>
+                              <span class="text-muted">Posted: 24 Feb, 2017 by 10:00am</span>
+
+                            </div>
+                             <div class="col-xs-6 col-sm-3 placeholder">
+                              <img src="img/food/sub.jpg" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail">
+                              <h4>Subs</h4>
+                              <span class="text-muted">Posted: 24 Feb, 2017 by 10:00am</span>
+                            </div>
+                            <div class="col-xs-6 col-sm-3 placeholder">
+                              <img src="img/food/pasta.jpg" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail">
+                              <h4>Pasta</h4>
+                              <span class="text-muted">Posted: 24 Feb, 2017 by 10:00am</span>
+                            </div>
+
+                          </div>
+
+                          <div class="row placeholders">
+                            <div class="col-xs-6 col-sm-3 placeholder">
+                              <img src="img/food/donuts.jpg" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail">
+                              <h4>Donuts</h4>
+                              <span class="text-muted">Posted: 24 Feb, 2017 by 10:00am</span>
+                            </div>
+                            <div class="col-xs-6 col-sm-3 placeholder">
+                              <img src="img/food/cookie.jpg" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail">
+                              <h4>Cookies</h4>
+                              <span class="text-muted">Posted: 24 Feb, 2017 by 10:00am</span>
+
+                            </div>
+                             <div class="col-xs-6 col-sm-3 placeholder">
+                              <img src="img/food/pretzels.jpg" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail">
+                              <h4>Pretzels</h4>
+                              <span class="text-muted">Posted: 24 Feb, 2017 by 10:00am</span>
+                            </div>
+                            <div class="col-xs-6 col-sm-3 placeholder">
+                              <img src="img/food/drinks.jpg" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail">
+                              <h4>Drinks</h4>
+                              <span class="text-muted">Posted: 24 Feb, 2017 by 10:00am</span>
+                            </div>
+
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+              <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="modal-body">
+                          <h2>Books for Grabz</h2>
+                          <hr class="star-primary">
+                          <div class="col-xs-6 col-sm-3 placeholder">
+                            <img src="img/books/security.jpg" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail">
+                            <h4>Security in Computing</h4>
+                            <span class="text-muted">Posted: 24 Feb, 2017 by 10:00am</span>
+                          </div>
+                          <div class="col-xs-6 col-sm-3 placeholder">
+                            <img src="img/books/linux.jpg" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail">
+                            <h4>Linux System Programming</h4>
+                            <span class="text-muted">Posted: 24 Feb, 2017 by 10:00am</span>
+
+                          </div>
+                           <div class="col-xs-6 col-sm-3 placeholder">
+                            <img src="img/books/introAlgo.jpg" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail">
+                            <h4>Introduction to Algorithms</h4>
+                            <span class="text-muted">Posted: 24 Feb, 2017 by 10:00am</span>
+                          </div>
+                          <div class="col-xs-6 col-sm-3 placeholder">
+                            <img src="img/books/C++.jpg" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail">
+                            <h4>C++, From Control Structures to Objects</h4>
+                            <span class="text-muted">Posted: 24 Feb, 2017 by 10:00am</span>
+                          </div>
+
+                        </div>
+
+                        <div class="row placeholders">
+                          <div class="col-xs-6 col-sm-3 placeholder">
+                            <img src="img/books/java.jpg" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail">
+                            <h4>Learning Java</h4>
+                            <span class="text-muted">Posted: 24 Feb, 2017 by 10:00am</span>
+                          </div>
+                          <div class="col-xs-6 col-sm-3 placeholder">
+                            <img src="img/books/crackCode.jpg" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail">
+                            <h4>Cracking the Coding Intervies</h4>
+                            <span class="text-muted">Posted: 24 Feb, 2017 by 10:00am</span>
+
+                          </div>
+                           <div class="col-xs-6 col-sm-3 placeholder">
+                            <img src="img/books/compArch.jpg" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail">
+                            <h4>Computer Architecture</h4>
+                            <span class="text-muted">Posted: 24 Feb, 2017 by 10:00am</span>
+                          </div>
+                          <div class="col-xs-6 col-sm-3 placeholder">
+                            <img src="img/books/oop.jpg" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail">
+                            <h4>BObject Oriented Programming</h4>
+                            <span class="text-muted">Posted: 24 Feb, 2017 by 10:00am</span>
+                          </div>
+
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+              <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="modal-body">
+                            <h2>Clothes for Grabz</h2>
+                            <hr class="star-primary">
+
+                            <div class="col-xs-6 col-sm-3 placeholder">
+                              <img src="img/clothes/t.jpg" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail">
+                              <h4>T-Shirt</h4>
+                              <span class="text-muted">Posted: 24 Feb, 2017 by 10:00am</span>
+                            </div>
+                            <div class="col-xs-6 col-sm-3 placeholder">
+                              <img src="img/clothes/jeans.jpg" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail">
+                              <h4>Jeans</h4>
+                              <span class="text-muted">Posted: 24 Feb, 2017 by 10:00am</span>
+
+                            </div>
+                             <div class="col-xs-6 col-sm-3 placeholder">
+                              <img src="img/clothes/skirt.jpg" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail">
+                              <h4>Skirt</h4>
+                              <span class="text-muted">Posted: 24 Feb, 2017 by 10:00am</span>
+                            </div>
+                            <div class="col-xs-6 col-sm-3 placeholder">
+                              <img src="img/clothes/sweater.jpg" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail">
+                              <h4>Sweater</h4>
+                              <span class="text-muted">Posted: 24 Feb, 2017 by 10:00am</span>
+                            </div>
+
+                          </div>
+
+                          <div class="row placeholders">
+                            <div class="col-xs-6 col-sm-3 placeholder">
+                              <img src="img/clothes/shirt.jpg" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail">
+                              <h4>Button Down Shirt</h4>
+                              <span class="text-muted">Posted: 24 Feb, 2017 by 10:00am</span>
+                            </div>
+                            <div class="col-xs-6 col-sm-3 placeholder">
+                              <img src="img/clothes/timbs.jpg" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail">
+                              <h4>Timbs</h4>
+                              <span class="text-muted">Posted: 24 Feb, 2017 by 10:00am</span>
+
+                            </div>
+                             <div class="col-xs-6 col-sm-3 placeholder">
+                              <img src="img/clothes/jacket.jpg" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail">
+                              <h4>Jacket</h4>
+                              <span class="text-muted">Posted: 24 Feb, 2017 by 10:00am</span>
+                            </div>
+                            <div class="col-xs-6 col-sm-3 placeholder">
+                              <img src="img/clothes/socks.jpg" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail">
+                              <h4>Socks</h4>
+                              <span class="text-muted">Posted: 24 Feb, 2017 by 10:00am</span>
+                            </div>
+
+                          </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    <div class="portfolio-modal modal fade" id="newPostModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+              <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+            </div>
+    <div class="container">
+
+      <form class="form-signin col-lg-4 col-md-5 col-sm-5 post-form col-lg-offset-4 col-md-offset-4.5 col-sm-offset-4.5">
+        <h2 class="form-signin-heading">Post Item</h2>
+        <input type="text" id="inputItemName" class="form-control" placeholder="Item Name" required autofocus>
+        <input type="text" id="inputItemDesc" class="form-control" placeholder="Item Description" required autofocus>
+
+
+
+
+        <div class="dropdown">
+
+	      <div class="dropdown">
+
+		  <button class="btn btnLabel btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Category
+		  <span class="caret"></span></button>
+		  <ul class="dropdown-menu">
+		    <li><a href="#">Food</a></li>
+		    <li><a href="#">Books</a></li>
+		    <li><a href="#">Clothing</a></li>
+		  </ul>
+
+
+	    </div>
+
+
+      <div class="panel panel-default">
+        <div class="panel-heading"><strong>Upload Files</strong> <small>Bootstrap files upload</small></div>
+        <div class="panel-body">
+
+          <!-- Standar Form -->
+          <h4>Select files from your computer</h4>
+          <form action="" method="post" enctype="multipart/form-data" id="js-upload-form">
+            <div class="form-inline">
+              <div class="form-group">
+                <input type="file" name="files[]" id="js-upload-files" multiple>
+              </div>
+              <button type="submit" class="btn btn-sm btn-primary" id="js-upload-submit">Upload files</button>
+            </div>
+          </form>
+
+          <!-- Drop Zone -->
+          <h4>Or drag and drop files below</h4>
+          <div class="upload-drop-zone" id="drop-zone">
+            Just drag and drop files here
+          </div>
+
+          <!-- Progress Bar -->
+          <div class="progress">
+            <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+              <span class="sr-only">60% Complete</span>
+            </div>
+          </div>
+
+          <!-- Upload Finished -->
+          <div class="js-upload-finished">
+            <h3>Processed files</h3>
+            <div class="list-group">
+              <a href="#" class="list-group-item list-group-item-success"><span class="badge alert-success pull-right">Success</span>image-01.jpg</a>
+              <a href="#" class="list-group-item list-group-item-success"><span class="badge alert-success pull-right">Success</span>image-02.jpg</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Post</button>
+      </form>
+
+    </div>
+</div>
+</div>
+    </div> <!-- /container -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script type="text/javascript" src="Post.js"></script>
+</body>
+</html>

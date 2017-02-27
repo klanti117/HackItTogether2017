@@ -1,0 +1,76 @@
+.profile-row{
+    margin-top: 60px;
+        width: 85%;
+    margin: 80px auto;
+
+}
+
+.profile-row .placeholder img{
+	height: 200px;
+	width: 200px;
+}
+
+span.profile-username {
+    display: block;
+    padding: 12px;
+    color: #000;
+    font-size: 18px;
+}
+
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+    border-color: #101010;
+    padding-right: 18px;
+
+}
+
+.profile-row .col-lg-6.view-all-div {
+    margin-top: 14px;
+    text-align: right;
+    padding-right: 5%;
+}
+.row.view-all-row {
+    margin-bottom: 16px;
+}
+
+a.btn.btn-danger {
+    text-align: right;
+    margin-top: 12px;
+}
+
+.navbar-brand {
+    float: left;
+    height: 80px;
+
+  }
+
+  ul.nav.navbar-nav.navbar-right {
+    padding-top: 15px;
+}
+
+form.navbar-form.navbar-right {
+    padding-top: 15px;
+}
+a.navbar-brand.logo {
+    padding-top: 6px;
+}
+a.navbar-brand.logo {
+    padding-top: 6px;
+}
+.navbar-inverse {
+    background-color: #FFF;
+}
+.navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a{
+color: #000;
+}
+.navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a:hover{
+color: #b92933;
+}
+
+footer.bs-docs-footer {
+    background: #474c50;
+    padding: 20px;
+        color: #FFF;
+}
+footer.bs-docs-footer img {
+    margin-right: 12px;
+}

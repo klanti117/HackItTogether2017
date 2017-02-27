@@ -1,0 +1,36 @@
+body {
+	background-color: #d9edf7;
+}
+
+.register-form input.form-control {
+    margin-bottom: 7px;
+}
+
+.register-form{
+	margin-top: 15px;
+	background: white;
+	padding: 15px 23px;
+	border-radius: 6px;
+}
+
+.register-form input.control-label {
+}
+
+.navbar{
+	background: #FFF;
+	height: 90px;
+}
+.container {
+    margin-top: 40px;
+}
+
+footer.bs-docs-footer {
+	margin-top: 40px;
+
+		background: #474c50;
+		padding: 20px;
+				color: #FFF;
+}
+footer img {
+		margin-right: 12px;
+}

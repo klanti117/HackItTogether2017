@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
-  get 'items/index' => 'items#index'
+  root 'items#index'
+
+  get 'items/index' 
 
   get 'sessions/new'
 
@@ -15,7 +17,6 @@ Rails.application.routes.draw do
 
   get 'users/index' => 'users#index'
 
-  root "pages#home"
   get 'pages/home'
 
 

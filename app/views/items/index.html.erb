@@ -1,18 +1,31 @@
-<h1>Items#index</h1>
+<div class="container-fluid">
+      <div class="row profile-row">
+
+        <div class="col-sm-12 col-md-10 col-lg-12 col-sm-12 col-md-12  main">
+
+      <div class="row view-all-row">
+        <div class="col-lg-6">
+        <h3 class="sub-header">Recent Items posted </h3>
+        </div>
+        <div class="col-lg-6 view-all-div">
+        <a class="btn btn-primary" href="#" role="button">View all »</a>
+        </div>
+      </div>
+
+      <div class="row placeholders">
+
 <% @item.each do |i| %>
-<div class="item box">
-	<div class="item image">
-		<%= image_tag i.image, :class => "item image"%>
+  <div class="col-xs-6 col-sm-3 placeholder">
+
+		<%= image_tag i.image, :class => "item image" %>
 		
+	<h4><%= i.name %></h4>
+              <span class="text-muted"><%= i.description %></span>
+              <br>
+              by: <b><span class="text-muted"><%= i.user.name %></span></b>
+              <br>
+              <a class="btn btn-danger" href="#" role="button">Cancel</a>
 	</div>
-	<div class="item info">
-		<%= i.name %><br>
-		<%= i.description %><br>
-		Submitted by <%= i.user.name %><br>
-		Num of Comments<br>
-	</div>
-</div>
-<br><br><br>
 <% end %>
 
 <p>Find me in app/views/items/index.html.erb</p>
